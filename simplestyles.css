@@ -1,0 +1,92 @@
+body {
+  /*background-color: rgb(247, 247, 247);*/
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10.64px;
+  font-size: 51px;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 10.64px;
+  margin-bottom: 50px;
+}
+
+div {
+  text-align: center;
+  margin-top: 35px;
+}
+
+button {
+  font-size: 19px;
+  outline: none;
+  border: none;
+  padding-bottom: 0px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 3px #999;
+}
+
+button:active {
+  box-shadow: 0 0px #667;
+  transform: translateY(3px);
+}
+
+.bottomButton {
+  font-size: 17px;
+  outline: none;
+  border: none;
+  padding-bottom: 0px;
+  /*background-color: rgb(247, 247, 247);*/
+  box-shadow: 0 3px #999;
+}
+
+.bottomButton:active {
+  box-shadow: 0 0px #667;
+  transform: translateY(3px);
+}
+
+input {
+  min-width: 245px;
+  max-width: 245px;
+  background-color: rgb(255, 255, 255);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid lightblue;
+  outline:none;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.output {
+  border-left: 3px solid lightblue;
+  font-family: inherit;
+  min-width: 281px;
+  max-width: 281px;
+  text-align: center;
+  margin: auto;
+  margin-top: 35px;
+}
+
+.output2 {
+  border-left: 3px solid lightblue;
+  font-family: inherit;
+  min-width: 281px;
+  max-width: 281px;
+  text-align: center;
+  margin: auto;
+  margin-top: 35px;
+}
+
+p {
+  overflow: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
