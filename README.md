@@ -1,2 +1,3 @@
 # Duplex-Printing-Calculator
-Double-sided printing made easy.
+
+https://lukepatr.github.io/Duplex-Printing-Calculator/
