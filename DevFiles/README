@@ -1,0 +1,80 @@
+Name:Harpreet Saini; ID: 1504108
+     Luke Patrick Dela Cruz; ID: 1504816
+     CMPUT 274 Fa17
+
+Accessories:
+* Arduino Mega Board (AMG)
+* LCD display
+
+Included Files:
+* postfixeval.cpp
+* postfixeval.h
+* stack.exercise.8.cpp
+* stack.exercise.8.h
+* graphing.cpp
+* lcd_image.cpp
+* lcd_image.h
+* Makefile
+* README
+
+Usage instructions:
+1. Connect the Arduino to the PC using an A-B style USB cable.
+2. Ensure that the Arduino is using the proper serial port (/dev/ttyACM0 or -ACM1).
+3. In the directory containing the files, use commands "make upload && serial-mon"
+to upload the code to the Arduino and view the serial monitor.
+4. Use (Ctrl- a + z + e) to start local echo.
+5. Follow on-screen instructions.
+
+Notes:
+* Thanks to: https://blog.protoneer.co.nz/arduino-float-to-string-that-actually-works/
+for the nice find.
+
+* Thanks to : https://www.youtube.com/watch?v=hN7INGFw36A // at 3:10
+
+* Thanks to: https://ee-programming-notepad.blogspot.ca/2016/10/16-bit-color-generator-picker.html
+for their color generator
+
+* Thanks to: https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P
+for showing the basics of the stack and evaluation of infix expressions
+
+* Usage of some class code with the parentheses balance checker as a minor project addition
+
+Assumptions:
+* That the variable z is used as a placeholder for the independent variable that will be used to graph the
+dependent variable y such that y = y(z)
+* That the types of brackets used are open ()... this is to remain consistent with common calculators' notation (desmos, texas instruments etc.)
+* The the list of functions include only:
+>tan, sin, cos, exp, log (natural logarithm), atan, acos, asin, tanh, sinh, and cosh
+>also general polynomials can be handled with the exception of those that are limited by the pow functions such as cube roots
+* There are only non-sophisticated user input error detection measures in place including:
+>parentheses checking, wrong variable checking, and unknown character detection
+
+Issues with the program:
+* Issues with log and tan functions such that they cause minor visual glitches
+* Issues vertical asymptotes on really large domains (tanx) for large domains) being visible
+* Because the dtostrf() requires the programmer to make sure that it has enough storage for the values, there is a restriction
+on the number of digits to the double number digits, but the amount of digits it that is hardcoded as of now is 50, which is quite generous
+* "...pow cannot be used to obtain a root of a negative number..." from http://en.cppreference.com/w/cpp/numeric/math/pow
+* https://softwareengineering.stackexchange.com/questions/42269/why-is-216-a-special-number
+
+Wiring instructions:
+* Wiring: from bottom to top on the right side (the side with the pins).
+	Board Pin <---> Arduino Pin
+	===========================
+	GND             GND
+	Vin             5V
+	3Vo             NOT CONNECTED
+	CLK             52
+	MISO            50
+	MOSI            51
+	CS              10
+	D/C             9
+	RST             NOT CONNECTED
+	Lite            NOT CONNECTED
+	Y+              A2 (analog pin)
+	X+              4  (digital pin)
+	Y-              5  (digital pin)
+	X-              A3 (analog pin)
+	IM0 - IM3       NOT CONNECTED (they expect a 3.3v signal, DON'T CONNECT!)
+	CCS             6
+	CD              NOT CONNECTED
